@@ -1,0 +1,27 @@
+2. stack
+(6,4)
+(6,3)
+(6,5)
+(7,5)
+(8,5)
+(8,6)
+(8,7)
+(8,8)
+(7,8)
+(6,6)
+(5,4)
+(4,4)
+4. queue
+(6,4)
+(5,4)
+(6,5)
+(6,3)
+(4,4)
+(6,6)
+(7,5)
+(3,4)
+(4,5)
+(8,5)
+(2,4)
+(4,6)
+Stack algorithm is LIFO, which means every time when you push coordinates, it will always pop the last coordinate you added to the stack. Stack will always remember the last coordinate you added onto the stack. Queue algorithm is FIFO, which means every time when you push coordinates onto the queue, it will always pop the first coordinate you added to the queue. 

@@ -1,0 +1,33 @@
+2. 
+The one argument insert function has no problem with the Sequence si.insert(50), because the sequence is a series of integers data type, and taking care by the function of comparison. However, one argument insertion does not work for the complex, because the compiler don’t know how to compare two complex objects in the sequence, thus the class complex will need to overload the operator < in order for sc.insert(complex(40,10));
+
+3b,
+if we solve this problem with a one-parameter listAll, and call it recursively with the submenu, this would work fine if we don’t need to print out the path, however since we need to print the full path of the menu, it is quite difficult for this recursive call to remember the full path of the menu. Thus, this is not a good idea to use a one-parameter listAll and implement it as the recursive function if we want print out the full path of the menu.
+
+
+4a.
+it will take O(N^3) to process this algorithm, because it will take N time to process find A at first in which it takes N, once we find our target name, we then process whole list just to find whether A is the friend of B in which takes N times if not, then we will process goes back to find A in the N users, thus it will take O(N^2) just to find if A is friend of B, however, we want to find number of mutual friends between A and B we will then take N process friends in C in A and another N to see C in the B, so the total is N(find A)*N(find B)*2N(C in A + C in B), thus the complexity is O(N^3)
+
+b.
+it will take O(N^3) to process this algorithm, at first, the most outer loop will run N time, however, the second inner loop will run when depends on the most outer loop, for example, when N =0, the second inner loop will run N time, when N=1, i will run 1 time and so on, so it will be n*(n-1)/2 j, and we can simplify as O(N^2). In the most inner loop, it  will take O(2N) to find out C in both A and B, therefore this process will take O(N), thus the overall complexity O(N^3).
+
+5a.
+Visiting every item: O(N), it takes N time to visit every node in the worse case.
+Get item: O(N2) it takes another N time to get the item thus the total time is O(N^2)
+Insert item: O(N^2), it takes take N to visit the node and another N traverse to the specific location, which take O(N^2)
+Thus, the overall big O is O(N+N^2+N^2)
+in this case, we will simplify as O(N^2)
+
+b.
+Visiting every item: O(N) it takes N time traverse from the begin to the end.
+insertBefore: O(N) it takes N times to insert the value before the res.m_head.
+Swap: O(1) it take one time to swap the value 
+Thus the overall big O for this algorithm O(N+N+1) simplify O(N)
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+MyMap:
+
+associate: O(log2n)
+find: O(log2n)
+
+for associate, it will take log2n to associate the value type and key type, because MyMap is BST, Similarly, it will take O(log2n) to find a item in the BST;
+
+AttractionMapper:
+init() : O(N+Alog2A)
+getGeoCoord(): O(log2A)
+
+for init: In average case, it will take n to loop thought number of segments and inner for loop A to loop thought the attraction size and then associate them will be logA. And sometimes we may or may not find a attraction in the map, thus the average case is O(N+Alog2A).
+for geoGeoCoord: the complexity is O(logA) to find the item because mymap uses find that cost logA. 
+
+SegmentMapper:
+init() : O((N+A)*log2A)
+getSegment: O(log2A)
+
+for init(), it takes N to loop number of the getSegment plus A to get number of attraction and log2A to find the attractions  
+
+for getSegment, the complexity is O(log2N);
+
+Navigator:
+navigate(): O(logA*logN*N2)
+it takes logA to associate visited locations and logN to get number of segment and N to loop thought mine priority queue in worse case and N to recursive call number of the item in my vector.
+

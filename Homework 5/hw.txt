@@ -1,0 +1,117 @@
+1.
+a.
+                                 50
+                   20                               60
+              10       40                              70 
+                15   30                             65     80
+                   25  35                                75
+b.
+Pre-Order: 50,20,10,15,40,30,25,35,60,70,65,80,75
+Pos-Order: 15,10,25,35,30,40,20,65,75,80,70,60,50
+In-order: 10,15,20,25,30,35,40,50,60,65,70,75,80
+
+c.
+after delete 30
+                                   50
+                   20                                60
+              10       40                              70 
+                15   25                              65   80
+                       35                                75
+
+after delete 20
+                                   50
+                   15                                60
+              10       40                              70 
+                    35                              65   80
+                       25                                75
+
+2.
+a. struct node
+{
+    node(int value, node* parent)
+   {
+	m_value=value;
+	m_parent=parent;
+	left=right==nullptr;
+   } 
+int m_value;
+node*m_parent;
+node*left;
+node*right;
+}
+
+b.
+
+void insert(int value)
+{
+   if(parent node is nullptr)
+   {
+     allocated a new node and make it points to itself;
+   }
+   create a node that points to the parent in this BST.
+    for(;;)
+    {
+	if(node is already exist in our BST) return;
+	if(value is less than the value in the node)
+	{
+	   if(current node is not equal to nullptr)
+	   {
+		advance to the next node
+            }
+	   else
+	    {
+                allocate a new left node and then points to its parent;
+	    }
+
+	}
+	else if(value is greater than the value in the node)
+	{
+	   if(current node is not equal to nullptr)
+	   {
+		advance to the next node
+            }
+	   else
+	    {
+                allocate a new right node and then points to its parent;
+	    }
+
+	}
+	
+	
+
+    }
+
+}
+
+
+3.
+a.
+           8 
+        3     6
+      0   2  4
+
+
+b.
+ 0 1 2 3 4 5
+|8|3|6|0|2|4|
+
+c.
+|6|3|4|0|2|
+
+4.
+
+a. O(C+S)
+b. O(log2C + S)
+c. O(log2C + log2S)
+d. O(log2S+1)
+e. O(1)
+f. O(log2C+S)
+g. O(S)
+h. O(Clog2S)
+
+
+
+
+
+
+
